@@ -1,25 +1,20 @@
-import React from "react";
+// FirstComponent.jsx
+import React from 'react';
 
-const InfoComponent = () => {
-  // Definindo as variáveis
-  const nome = "SeuNome";
-  const sobrenome = "SeuSobrenome";
+const FirstComponent = () => {
+  const nome = "João";
+  const sobrenome = "Silva";
   const matricula = "123456";
-  const nomeProfessor = "NomeDoProfessor";
-  const nomeDisciplina = "NomeDaDisciplina";
-
-  // Função para retornar nome completo
-  const nomeCompleto = `${nome} ${sobrenome}`;
-  const infoMatricula = `${nomeCompleto}, Matrícula: ${matricula}`;
-  const infoProfessor = `Professor: ${nomeProfessor}, Disciplina: ${nomeDisciplina}`;
+  const nomeProfessor = "Professor Carlos";
+  const nomeDisciplina = "Desenvolvimento Web";
 
   return (
     <div>
-      <h1>Informações do Aluno</h1>
-      <p>{infoMatricula}</p>
-      <p>{infoProfessor}</p>
+      <h1>Bem-vindo(a), {nome} {sobrenome}!</h1>
+      <p>Matrícula: {matricula}</p>
+      <p>Disciplina: {nomeDisciplina} com {nomeProfessor}</p>
     </div>
   );
 };
 
-export default InfoComponent;
+export default FirstComponent;
